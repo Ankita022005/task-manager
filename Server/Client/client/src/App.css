@@ -1,0 +1,118 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  transition: 0.3s ease;
+}
+
+.container.dark {
+  background: linear-gradient(135deg, #141e30, #243b55);
+}
+
+.top-bar {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.dark-btn {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  background: white;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.dark-btn:hover {
+  transform: scale(1.05);
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  padding: 40px;
+  width: 350px;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+  text-align: center;
+  color: white;
+}
+
+.card h2 {
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.card input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+}
+
+.password-field {
+  position: relative;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 12px;
+  cursor: pointer;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  background: #f1f1f1;
+  transform: scale(1.03);
+}
+
+.switch-text {
+  margin-top: 15px;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.toast {
+  position: absolute;
+  bottom: 30px;
+  background: black;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 25px;
+  animation: fadeInOut 3s ease;
+}
+
+@keyframes fadeInOut {
+  0% {opacity: 0; transform: translateY(20px);}
+  10% {opacity: 1; transform: translateY(0);}
+  90% {opacity: 1;}
+  100% {opacity: 0; transform: translateY(20px);}
+}
